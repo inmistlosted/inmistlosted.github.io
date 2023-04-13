@@ -1,0 +1,41 @@
+.links-container {
+    height: 50vh;
+    background-color: #01a66f;
+
+    .title {
+        color: #000;
+        font-size: 2rem;
+        border-radius: 20px;
+        text-transform: uppercase;
+        font-weight: 900;
+    }
+
+    .link {
+        display: block;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin: 0 13px;
+    }
+
+    .link:hover {
+        width: 176px;
+        height: 176px;
+        margin: 0;
+    }
+
+    .linkedin {
+        background-image: url("../../assets/linkedin_logo.png");
+        background-size: 100% 100%;
+    }
+
+    .github {
+        background-image: url("../../assets/github_logo.png");
+        background-size: 100% 100%;
+    }
+
+    .mail {
+        background-image: url("../../assets/mail_logo.png");
+        background-size: 100% 100%;
+    }
+}

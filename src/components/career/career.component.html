@@ -1,0 +1,28 @@
+<div class="career-container w-100 d-flex flex-column align-items-center mb-5">
+    <div class="title mb-4">Career</div>
+    <div class="w-75 d-flex flex-column">
+        <div *ngFor="let career of careerEntries" class="d-flex">
+            <div class="period d-flex justify-content-end">{{career.startDate.toLocaleDateString()}} - {{career.endDate ? career.endDate.toLocaleDateString() : "Current"}}</div>
+            <div class="line-container d-flex flex-column align-items-center mx-4">
+                <div class="line start"></div>
+                <div class="circle"></div>
+                <div class="line end"></div>
+            </div>
+            <div class="career-info d-flex flex-column py-4">
+                <div class="d-flex flex-column mb-3">
+                    <div class="info-title">{{career.title}}</div>
+                    <div class="info-subtitle">{{career.company}}, {{career.country}}</div>
+                </div>
+                <div class="description mb-3">{{career.description}}</div>
+                <div class="tasks-container">
+                    <div class="tasks-title text-center">Tasks</div>
+                    <ul>
+                        <li *ngFor="let task of career.tasks" class="task mb-1">
+                            {{task}}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

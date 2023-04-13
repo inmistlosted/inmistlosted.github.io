@@ -1,0 +1,20 @@
+<div class="education-container w-100 d-flex flex-column align-items-center mb-5">
+    <div class="title mb-4">Education</div>
+    <div class="w-75 d-flex flex-column">
+        <div *ngFor="let education of educationEntries" class="d-flex">
+            <div class="period d-flex justify-content-end">{{education.startDate.toLocaleDateString()}} - {{education.endDate.toLocaleDateString()}}</div>
+            <div class="line-container d-flex flex-column align-items-center mx-4">
+                <div class="line start"></div>
+                <div class="circle"></div>
+                <div class="line end"></div>
+            </div>
+            <div class="education-info d-flex flex-column py-4">
+                <div class="d-flex flex-column mb-3">
+                    <div class="info-title">{{education.title}}</div>
+                    <div class="info-subtitle">{{education.place}}, {{education.city}}, {{education.country}}</div>
+                </div>
+                <div class="description">{{education.description}}</div>
+            </div>
+        </div>
+    </div>
+</div>

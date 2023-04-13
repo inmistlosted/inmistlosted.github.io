@@ -1,0 +1,19 @@
+<div class="skills-container w-100 d-flex flex-column align-items-center mb-5">
+    <div class="title mb-4">Skills</div>
+    <div class="skills w-75 d-flex flex-wrap justify-content-between">
+        <div *ngFor="let skill of skills" class="skill d-flex mb-2">
+            <div class="skill-title">{{skill.title}}</div>
+            <div class="d-flex">
+                <div *ngFor="let item of stars; let index = index" class="mx-2">
+                    <div *ngIf="(index < skill.rating);else star_empty">
+                        <i class="full-star bi bi-star-fill"></i>
+                    </div>
+                    
+                    <ng-template #star_empty>
+                        <i class="bi bi-star"></i>
+                    </ng-template>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

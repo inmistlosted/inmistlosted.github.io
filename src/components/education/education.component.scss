@@ -1,0 +1,57 @@
+.education-container {
+    .title {
+        color: #000;
+        font-size: 2rem;
+        border-radius: 20px;
+        text-transform: uppercase;
+        font-weight: 900;
+    }
+
+    .period {
+        min-width: 25%;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        color: grey;
+    }
+
+    .line-container {
+        .line {
+            width: 6px;
+            border: 2px solid black;
+            border-bottom: none;
+            border-top: none;
+        }
+
+        .line.start {
+            height: 20px;
+        }
+
+        .line.end {
+            flex-grow: 1;
+        }
+
+        .circle {
+            width: 20px;
+            height: 20px;
+            border: 2px solid black;
+            border-radius: 50%;
+        }
+    }
+
+    .education-info {
+        .info-title {
+            font-size: 1.7rem;
+            text-transform: uppercase;
+            font-weight: 900;
+        }
+
+        .info-subtitle {
+            font-size: 1.4rem;
+            color: grey;
+        }
+
+        .description {
+            font-size: 1.3rem;
+        }
+    }
+}
